@@ -22,8 +22,9 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [Vite.Js](https://vitejs.dev/)
 - [React.Js](https://react.dev/)
-- [React Router](https://reactrouter.com/en/main)
-- [Styled Components](https://styled-components.com/)
+- [React-Router](https://reactrouter.com/en/main)
+- [React-Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [Styled-Components](https://styled-components.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Git](https://git-scm.com/)
 
