@@ -24,6 +24,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React.Js](https://react.dev/)
 - [React-Router](https://reactrouter.com/en/main)
 - [React-Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [React-Hook-Form]https://react-hook-form.com/()
 - [Styled-Components](https://styled-components.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Git](https://git-scm.com/)
