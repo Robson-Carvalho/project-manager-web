@@ -16,7 +16,7 @@ export const Header = () => {
             <LinkLogin to="/login">Login</LinkLogin>
           </li>
           <li>
-            <LinkSignIn to="/signIn">Sign In</LinkSignIn>
+            <LinkSignIn to="/signIn">Sign Up</LinkSignIn>
           </li>
         </Links>
       </Nav>
