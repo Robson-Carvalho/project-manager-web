@@ -9,6 +9,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
 
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
 
             <Footer />
