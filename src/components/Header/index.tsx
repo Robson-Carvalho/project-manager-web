@@ -1,4 +1,4 @@
-import { Container, Nav, Logo, Links, LinkLogin, LinkSignIn } from "./styles";
+import { Container, Nav, Logo, Menu, LinkLogin, LinkSignUp } from "./styles";
 
 import logo from "../../assets/logo.svg";
 
@@ -7,18 +7,18 @@ export const Header = () => {
     <Container>
       <Nav>
         <Logo to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
           <h1>Project Manager</h1>
         </Logo>
 
-        <Links>
+        <Menu>
           <li>
             <LinkLogin to="/login">Login</LinkLogin>
           </li>
           <li>
-            <LinkSignIn to="/signIn">Sign Up</LinkSignIn>
+            <LinkSignUp to="/signIn">Sign Up</LinkSignUp>
           </li>
-        </Links>
+        </Menu>
       </Nav>
     </Container>
   );
