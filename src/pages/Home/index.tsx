@@ -1,30 +1,24 @@
-import { Header } from "../../components/Header";
-import { Container, Main, Hero, Texts } from "./styles";
-import { Footer } from "../../components/Footer";
+import { Container, Hero, Content } from "./styles";
 
 import illustrationHome from "../../assets/illustration-home.svg";
 
 export const Home = () => {
   return (
     <Container>
-      <Header />
-      <Main>
-        <Hero>
-          <Texts>
-            <h2>
-              Seu <br /> gerenciador de <br /> projetos.
-            </h2>
-            <p>
-              Com o Project Manager, gerenciar projetos se torna uma tarefa
-              simples e eficiente, permitindo que você foque no que realmente
-              importa: alcançar seus objetivos.
-            </p>
-          </Texts>
+      <Hero>
+        <Content>
+          <p>
+            Seu <br /> gerenciador de <br /> projetos.
+          </p>
+          <span>
+            Com o Project Manager, gerenciar projetos <br /> se torna uma tarefa
+            simples e eficiente, <br /> permitindo que você foque no que <br />{" "}
+            realmente importa: alcançar seus <br /> objetivos.{" "}
+          </span>
+        </Content>
 
-          <img src={illustrationHome} alt="illustration login" />
-        </Hero>
-      </Main>
-      <Footer />
+        <img src={illustrationHome} alt="illustration" />
+      </Hero>
     </Container>
   );
 };
