@@ -1,8 +1,6 @@
 import { AuthProvider } from "./providers/AuthProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { ProtectedLayout } from "./components/ProtectedLayout";
-
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global.style";
 import { theme } from "./styles/theme";
