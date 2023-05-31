@@ -5,39 +5,27 @@ import { ProtectedLayout } from "./components/ProtectedLayout";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global.style";
-import { variables } from "./styles/variables";
+import { theme } from "./styles/theme";
+
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 import { Home } from "./pages/Home";
-import { Profile } from "./pages/Profile";
-import { Login } from "./pages/Login";
-import { NotFound } from "./pages/NotFound";
-import { SignIn } from "./pages/SignIn";
 
 export const App = () => {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={variables}>
+      <ThemeProvider theme={theme}>
         <AuthProvider>
           <BrowserRouter>
+            <Header />
+
             <Routes>
               <Route path="/" element={<Home />} />
-
-              <Route path="/login" element={<Login />} />
-
-              <Route path="/signin" element={<SignIn />} />
-
-              <Route
-                path="/profile"
-                element={
-                  <ProtectedLayout>
-                    <Profile />
-                  </ProtectedLayout>
-                }
-              />
-
-              <Route path="*" element={<NotFound />} />
             </Routes>
+
+            <Footer />
           </BrowserRouter>
         </AuthProvider>
       </ThemeProvider>
