@@ -1,47 +1,65 @@
 import { styled } from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-`;
-
-export const Main = styled.main`
-  width: 100%;
+export const Container = styled.main`
+  width: 100vw;
   padding: 0 24px;
-  flex: 1;
 `;
 
-export const Hero = styled.div`
-  max-width: 1216px;
+export const Hero = styled.section`
+  max-width: 1218px;
   margin: 0 auto;
+
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 123px 0 152px 0;
-`;
 
-export const Texts = styled.h2`
-  max-width: 499px;
-  width: 100%;
+  img {
+    @media (max-width: 1132px) {
+      width: 505px;
 
-  display: flex;
-  flex-direction: column;
+      @media (max-width: 1032px) {
+        width: 405px;
 
-  gap: 88px;
-
-  h2 {
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 80px;
-    color: ${({ theme }) => theme.titleColor};
+        @media (max-width: 460px) {
+          width: 305px;
+        }
+      }
+    }
   }
 
+  @media (max-width: 932px) {
+    justify-content: center;
+  }
+`;
+
+export const Content = styled.div`
+  max-width: 480px;
+  width: 100%;
+  padding: 48px 0;
+
   p {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 41px;
-    color: ${({ theme }) => theme.textColor};
+    font-size: ${({ theme }) => theme.font.sizes.big};
+    font-weight: ${({ theme }) => theme.font.extraBold};
+    margin-bottom: 32px;
+
+    @media (max-width: 932px) {
+      font-size: ${({ theme }) => theme.font.sizes.xxlarge};
+
+      @media (max-width: 460px) {
+        font-size: ${({ theme }) => theme.font.sizes.xlarge};
+      }
+    }
+  }
+
+  span {
+    font-size: ${({ theme }) => theme.font.sizes.medium};
+    font-weight: ${({ theme }) => theme.font.mediun};
+    color: ${({ theme }) => theme.colors.gray};
+
+    @media (max-width: 460px) {
+      font-size: ${({ theme }) => theme.font.sizes.small};
+    }
   }
 `;
